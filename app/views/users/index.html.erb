@@ -1,0 +1,17 @@
+
+<center>
+<div>
+<%= link_to "Logout!", logout_path %>
+<center>
+	
+
+<% @users.each do |f| %>
+ <tr> 
+  <td><%= f.firstname %>
+  <%= f.lastname %>
+ </td>
+</tr>
+<% end %>
+</center>
+</div>
+</center>

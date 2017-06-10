@@ -1,0 +1,15 @@
+<h2>CREATE PROJECT</h2>
+<%= form_for(:projects, url: user_projectowners_path)  do |f| %>
+
+<%= f.label :name  %> 
+<%= f.text_field :name , placeholder: "name" %><br><br>
+
+<%= f.label :startdate %>
+<%= f.date_field :startdate , placeholder: "startdate" %><br><br>
+
+<%= f.label :enddate %>
+<%= f.date_field :enddate , placeholder: "enddate" %><br><br>
+
+
+<%= f.submit "Create project" %>
+<% end %>

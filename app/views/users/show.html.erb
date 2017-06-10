@@ -1,0 +1,17 @@
+<center>
+
+<h3> Profile: <%= current_user.firstname %> <%= current_user.lastname %> </h3>
+
+
+
+<h2>Show Project</h2>
+
+<% @projectowners.each do|projectowner| %>
+<%= projectowner.name %>
+<%= projectowner.startdate %>
+<%= projectowner.enddate %>
+<%= link_to "Assign to Developer" %> 
+
+<%= link_to "Logout!", logout_path %>
+<% end %>
+</center>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  startdate: 2017-06-10
+  enddate: 2017-06-10
+  user: one
+  projectowner: one
+
+two:
+  name: MyString
+  startdate: 2017-06-10
+  enddate: 2017-06-10
+  user: two
+  projectowner: two

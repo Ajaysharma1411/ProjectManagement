@@ -1,0 +1,49 @@
+<center>
+<%= form_for @user do |f| %>
+
+<% if @user.errors.any? %>
+<div id="error_explanation">
+  <h3>
+<%= pluralize(@user.errors.count,"error") %>
+prohibited this user from being saved:
+</h2>
+</div>
+<%end%>
+
+<p>
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname , placeholder: "Firstname" %>
+  </p>
+
+  <p>
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname , placeholder: "Lastname" %>
+<p>
+  
+  <p>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </p>
+
+  <p>
+    <%= f.label :email %>
+    <%= f.email_field :email, placeholder: "Email" %>
+  </p>
+
+  <p>
+    <%= f.label :devid %>
+    <%= f.text_field :devid, placeholder: "Enter the Question" %>
+  </p>
+
+  <p>
+    <%= f.label :password %>
+    <%= f.password_field :password , placeholder: "Password" %>
+  </p>
+  
+  <p>
+    <%= f.submit "Sign Up",class: "btn btn-primary" %>
+  </p>
+  
+<%end%>
+
+</center>
